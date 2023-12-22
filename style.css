@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Rubik Doodle Shadow", sans-serif;
+  color: red;
+  font-size: 4rem;
+  margin-top: 0.5em;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 700px;
+
+  border: solid 1px black;
+  margin-right: 3rem;
+  background-color: white;
+}
+
+.grid-item {
+  width: calc(100% / 16);
+  height: calc(100% / 16);
+  border: none;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto; /* Push to the right */
+  margin-right: 20px;
+  width: 40%;
+}
+
+.color-button {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  color: white;
+  border: solid 1px black;
+}
+.eraser-button,
+.clear-button {
+  border: none;
+}
+
+.color-button,
+.eraser-button,
+.clear-button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  max-width: 40%;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+
+.color-button:hover,
+.eraser-button:hover,
+.clear-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.color-button:active,
+.eraser-button:active,
+.clear-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0.1, 0.2);
+}
